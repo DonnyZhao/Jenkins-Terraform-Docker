@@ -9,7 +9,7 @@ resource "aws_instance" "test" {
 ami = "ami-00a4cc92256196aba"
 instance_type = "t2.micro"
 vpc_security_group_ids = [aws_security_group.instance.id]
-key_name = "admin"
+key_name = "admin_demo"
 // connection {
 // type = "ssh"
 // host = self.public_ip
@@ -26,7 +26,7 @@ EOF
 }
 
 resource "aws_key_pair" "angela" {
-key_name = "admin"
+key_name = "admin_demo"
 //public_key = file("/go/src/github.com/hashicorp/terraform/conf/aws_key.pub")
 public_key="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC48IXrfAAJy2cSPqx5icMdbNDR5okYCZBoLud6lf4W9Idhyj2/TKG2xr4cluYS71EFycQIZyJd4K5XxsOOdGKo7QgeJUNcU9YhO5QdsAPBljRuQtxzVLKwWngSpcKjM8T/Tjkp4gZoUmpbUvzaB12+jfBPO4H9JpXcSt8366D3AyOK9vCa2UjRVkDMCSFN5rTslVCcekCJUygYKyhhn3orAwsm9E4DAeF7xErY77P3S+VLUctDOVp7bCMLrhwci/nvrCleWQckyYuY5F/PaXB4CtJCaoHtQLuMc2l8RNSWeX4veCFN4rQWHRfwVr4eluJOZWKwSq51N65pRSsKHf6D"
 }
