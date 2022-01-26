@@ -32,7 +32,7 @@ EOF
 //}
 
 resource "aws_security_group" "instance" {
-name = "terraform-example-instance"
+name = "terraform-example-instance-demo"
 
 ingress {
 from_port = 8080
