@@ -6,7 +6,7 @@ region = "ap-southeast-2"
 }
 
 resource "aws_instance" "test" {
-ami = "ami-60a26a02"
+ami = "ami-00a4cc92256196aba"
 instance_type = "t2.micro"
 vpc_security_group_ids = [aws_security_group.instance.id]
 key_name = "admin"
