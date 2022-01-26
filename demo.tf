@@ -26,12 +26,7 @@ EOF
 resource "aws_key_pair" "angela" {
 key_name = "admin"
 //public_key = file("/go/src/github.com/hashicorp/terraform/conf/aws_key.pub")
-public_key='AAAAB3NzaC1yc2EAAAADAQABAAABAQC48IXrfAAJy2cSPqx5icMdbNDR5okYCZBo
-Lud6lf4W9Idhyj2/TKG2xr4cluYS71EFycQIZyJd4K5XxsOOdGKo7QgeJUNcU9Yh
-O5QdsAPBljRuQtxzVLKwWngSpcKjM8T/Tjkp4gZoUmpbUvzaB12+jfBPO4H9JpXc
-St8366D3AyOK9vCa2UjRVkDMCSFN5rTslVCcekCJUygYKyhhn3orAwsm9E4DAeF7
-xErY77P3S+VLUctDOVp7bCMLrhwci/nvrCleWQckyYuY5F/PaXB4CtJCaoHtQLuM
-c2l8RNSWeX4veCFN4rQWHRfwVr4eluJOZWKwSq51N65pRSsKHf6D'
+public_key='ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC48IXrfAAJy2cSPqx5icMdbNDR5okYCZBoLud6lf4W9Idhyj2/TKG2xr4cluYS71EFycQIZyJd4K5XxsOOdGKo7QgeJUNcU9YhO5QdsAPBljRuQtxzVLKwWngSpcKjM8T/Tjkp4gZoUmpbUvzaB12+jfBPO4H9JpXcSt8366D3AyOK9vCa2UjRVkDMCSFN5rTslVCcekCJUygYKyhhn3orAwsm9E4DAeF7xErY77P3S+VLUctDOVp7bCMLrhwci/nvrCleWQckyYuY5F/PaXB4CtJCaoHtQLuMc2l8RNSWeX4veCFN4rQWHRfwVr4eluJOZWKwSq51N65pRSsKHf6Dbash-5.1'
 }
 
 resource "aws_security_group" "instance" {
