@@ -1,7 +1,7 @@
 # Configure and downloading plugins for aws
 provider "aws" {
-access_key = "AKIARCIVPQFCB3G3F3WJ"
-secret_key = "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"
+access_key = "AKIARCIVPQFCBSWPUXUQ"
+secret_key = "9Y0AVsxoJGtlE8HloEJlXatrtfXVWA7Sz9a4C"
 region = "ap-southeast-2"
 }
 
